@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz@10..48&family=Italianno&display=swap" rel="stylesheet">
+
+    <!-- remix icon -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <title>Navbar</title>
+</head>
+<body>
+    <div id="main">
+        <div class="topnav" id="myTopnav">
+            <a href="" class="active"><i class="ri-home-5-fill"></i>Home</a>
+            <a href=""><i class="ri-user-2-fill"></i>About</a>
+            <a href=""><i class="ri-folder-user-fill"></i>Education</a>
+            <a href=""><i class="ri-suitcase-fill"></i>Projects</a>
+            <a href=""><i class="ri-award-line"></i>Achivements</a>
+            <a href=""><i class="ri-contacts-fill"></i>contact</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="ri-menu-line"></i>
+            </a>
+
+            
+          </div>
+        </div>
+
+        <script>
+            function myFunction() {
+                var x = document.getElementById("myTopnav");
+                if (x.className === "topnav") {
+                  x.className += " responsive";
+                } else {
+                  x.className = "topnav";
+                }
+              }
+        </script>
+</body>
+</html>
